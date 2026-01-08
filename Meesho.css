@@ -1,104 +1,167 @@
 *{
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
 
+}
+/* * { outline: 2px solid red !important; } */
 button {
     cursor: pointer;
 }
+
+
+
+.banner, .banner2, .offerBannerImg {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+}
+
+
+
 nav{
     background-color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     border-bottom: 1px solid black;
-     height:5rem ;
+     min-height:5rem ;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
 }
 
-nav input{
-    width: 40rem;
-    height: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.navCenter{
+    width: 100%;
+    display: flex;
+    height:45px;
     border: 0;
-    font-size: 16px;
+    border: 2px solid black;
+    padding: 2px;
+    flex-grow:1;
 }
+
+
+.navCenter input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+        flex-grow:1;
+                font-size:clamp(5px, 2vw, 20px); 
+
+
+
+}
+
 
 nav h4{
     font-weight: 200;
-        margin-top: 18px;
+    display: none;
 
 }
 
-nav img{
-    width: 9rem;
-    height:3rem;
+
+
+
+.navLeft{
+    margin-left:10px;
+    width: 120px;
+    margin: 5px;
 
 }
+
+
 
 p{
-        margin-top: 10px;
+    
+        cursor: pointer;
 
 }
 
 .search {
-    font-size:2rem;
-    border-right: 2px solid black;
+    border-right:3px solid black ;
     text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
 
+.navRight{
+    display: flex;
+        flex-grow:0;
 
+        align-items: center;
+        gap:10px;
+        margin-right:10px;
+        justify-content: end;
+        padding-left: 40px;
 
 }
 
-nav div {
-    border: 2px solid black;
-    height: 3rem;
-    margin-top: 10px;
-}
-
-.user {
-    font-size: 1.5rem;
-}
-
-.cart {
-    font-size: 1.5rem;
-}
 
 .navIteam ul{
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
-    margin: 5px;
+    align-items: center;
     background-color: white;
-}
+    width: 100%;
+        font-size:clamp(5px, 2vw, 20px); 
+overflow-x: auto;
+flex-wrap: nowrap; 
+    overflow-x: auto;
+    gap: 10px;
+    flex-shrink: 1;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
 
+}
+.banner{
+    position: relative;
+}
 
 .banner img{
     width: 100%;
+    height: auto;
 }
 
 .imgText {
-    color:white;
-     z-index: 2;
-      text-align: end;
-      margin-top :-280px;
-      margin-right:100px;
-      font-size: 40px;
-      font-weight: 800;
+   position: absolute; 
+    top: 40%;           
+    left:70%;           
+    transform: translate(20%, -50%); 
+    
+    color: white;       
+    width: auto;       
+    z-index: 5;
+    font-size: clamp(10px, 2vw, 40px); 
+    font-weight: 800;
 
 }
 
-.imgText button {
-    width: 200px;
-    height: 70px;
-    font-size: 35px;
-    margin-top: 10px;
-    margin-right: 85px;
+
+.imgButton {
+    position: absolute;
+        z-index: 5;
+           top: 60%;           
+    left:78%;  
+   
+}
+
+.imgButton button {
+    width: 100%;
+        font-size: clamp(10px, 2vw, 30px); 
     border-radius: 10px;
-    border: 0;
+        border: 0;
+        height: 10%;
+        padding: 10px;
+        transition: transform 1s ease;
+    
+
+
 }
 
+.imgButton button:hover{
+    transform: scale(1.1);
+}
 
 
 
@@ -106,27 +169,26 @@ nav div {
 .outer{
     width: 100%;
     height: 60px;
-    margin-top: 87px;
     background-color: rgb(253, 238, 250);
     padding-top:2px;
+    display: flex;
+    justify-content: center;
 }
 
 .inner{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    height: 40px;
     background-color: white;
     width: 90%;
-    margin: 50px;
-    margin-top: 15px;
+    margin-top:8px;
     padding: auto;
     border-radius: 2px;
-
 }
 
 .inner p {
     text-align: center;
-    font-size: 20px;
+    font-size:clamp(5px,2vw,20px);
     height: 30px;
     margin:auto ;
 }
@@ -136,6 +198,7 @@ nav div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
 
@@ -143,88 +206,277 @@ nav div {
     text-align: center;
 }
 
+.outletImg{
+    transition: transform 2s ease;
+}
+
 .outletImg:hover{
  
     cursor: pointer;
-    scale: 1.1;
+    transform: scale(1.1);
 
+}
+
+.banner2{
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
 }
 
 .banner2 img {
-    margin-top: 15px;
+
     width:100%;
+    height:10%;
+
 }
 
 .banner2ImgOne{
-    width: 10rem;
-    position:end;
-    margin-left: 1000px;
-    margin-top: -500px;
+    width: 10%;
     display: flex;
     flex-direction: row;  
     cursor: pointer; 
+    position: absolute;
+    top: 22%;
+    left:65%;
+    transform: translate(20%, -50%); 
+    flex-shrink: 1;
+}
+
+.bannerimg1{
+        transition: transform 1s ;
+
 }
 
 
 .bannerimg1:hover{
-scale: 1.1;
+transform: scale(1.1);
 }
 
 
 
 .bannerimg2{
-    margin-left: 60px;
+    left: 30px;
+    position: relative;
+      transition: transform 1s;
+
 }
 
-.bannerimg2:hover{
-    scale: 1.1;
+
+
+.bannerimg2:hover {
+  transform: scale(1.1);
 }
+
 
 
 .banner2ImgTwo{
-    width: 10rem;
-     position:end;
-    margin-left: 1000px;
-    margin-top: 10px;
+      width:10%;
     display: flex;
     flex-direction: row;  
     cursor: pointer; 
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(20%, -50%); 
 
 }
 
 .bannerimg4{
-    margin-left: 60px;
-     
+    left: 30px;
+     position: relative;
+     transition: transform 2s;
 }
 
 .bannerimg4:hover{
-    scale: 1.1;
+      transform:  scale(1.1);
+
+}
+
+.bannerimg3{
+        transition: transform 1s ;
+
 }
 
 .bannerimg3:hover{
     scale:1.1;
+      transform:  scale(1.1);
+
 }
 
-.banner2 button {
-    width: 180px;
-    height: 50px;
+.banner2Button{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.banner2Button button {
+    width: 12%;
+        height: 12%;
     background-color:rgb(63, 31, 17);;
     border: 2px solid rgb(255, 209, 130);
     color: rgb(255, 209, 130);
-    font-size: 30px;
-    margin-left: 300px;
-    margin-top:-450px;
+    font-size:clamp(4px,2vw,30px);
     border-radius: 20px;
-    position: relative;
+    position:absolute;
+    
+       transition: transform 1s ;
+       bottom: 8%;
+       left: 15%;
+       
+
+}
+
+.banner2 button:hover{
+    transform: scale(1.1);
+        border: 4px solid rgb(255, 209, 130);
 
 }
 
 #orginalBrandHeading{
-    margin: 80px;
-    font-size: 50px;
+    margin: 30px;
+    font-size: clamp(10px,2vw,50px);
     font-weight: 100;
 }
 
 #orginalBrandHeading i {
     color: rgb(52, 47, 156);
+}
+
+.orginalBrandsImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.orginalBrandsImg img {
+    width: 10%;
+    height: 10%;
+    transition: transform 2s;
+    margin-left:5px ;
+}
+
+.orginalBrandsImg img:hover{
+    transform: scale(1.1);
+    border: 1px blue solid;
+}
+
+.marketting{
+    background-color: rgb(204, 224, 242);
+    width: 100%;
+    height:10%;
+    margin-top:20px;
+}
+
+.marketting img{
+    height: 80px;
+    margin: 20px;
+
+}
+
+.offerBannerImg {
+    position: relative;
+    height: 100%;
+    width:100%;
+}
+
+.offerBannerImg img {
+    height:auto;
+    width: 100%;
+}
+
+.imgsection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:60%;
+    height:auto;
+    z-index: 1;
+    position:absolute;
+    top: 10%;
+    left:40%;
+    gap: 8%;
+
+}
+
+.imgsection img {
+    width:15%;
+    height:20%;
+    cursor: pointer;
+}
+
+.buttonSection{
+    position: absolute;
+     display: flex;
+    flex-direction: row;
+    width:60%;
+    min-width:60px;
+    top:70%;
+    left: 35%;
+    flex-direction: row;
+    gap:2%;
+
+}
+
+.buttonSection button {
+    right: 20%;
+    width:25%;
+    height:40%;
+    color: purple;
+    background-color: white;
+    border: 1px solid yellow;
+    border-radius:100px;
+    font-weight: 700;
+        font-size:clamp(5px,2vw,25px);
+        transition: transform 1s ease;
+
+}
+
+.imgsection img:hover {
+    scale: 1.1;
+
+}
+
+
+.buttonSection button:hover{
+    transform: scale(1.1);
+
+}
+
+
+body {
+  font-size: 14px;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .humBurger{
+    display:none;  
+}
+
+nav h4{
+    display: block;
+}
+
+.navRight{
+            gap: 5px;
+
+}
+
+
+
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
 }
