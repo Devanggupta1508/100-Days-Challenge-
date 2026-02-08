@@ -1,0 +1,14 @@
+{
+  "name": "fifthday",
+  "version": "1.0.0",
+  "description": "fifth day topic - Path Parameter and Query String",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devang Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
