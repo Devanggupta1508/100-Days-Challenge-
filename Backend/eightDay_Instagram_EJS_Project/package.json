@@ -1,0 +1,15 @@
+{
+  "name": "eightday_instagram_ejs_project",
+  "version": "1.0.0",
+  "description": "eight day instagram ejs project to understand how its work with database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "devang gupta",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}

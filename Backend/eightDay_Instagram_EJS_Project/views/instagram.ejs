@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/css/instagram.css">
+</head>
+<body>
+    <nav>
+        <div class="webName">
+            <h3>Instagram</h3>
+        </div>
+
+                <div class="navbutton">
+            <button  id="logIn">Log In</button>
+                        <a href="#" id="signIn">Sign Up</a>
+
+        </div>
+    </nav>
+    <hr>
+ 
+
+    <main>
+        <div class="userInfo">
+
+                    <img src="<%= userData.profileImg %>" class="userImg">
+
+
+       <h1 class="userId"><%=userData.username%>  </h1>
+
+        </div>
+
+          <div class="userData">
+
+
+            <h4><%=userData.post%> &nbsp; <p>Post </p>
+            </h4>
+
+               <h4> <%=userData.following%> &nbsp;   <p>Follwing</p>
+            </h4>
+                               <h4> <%=userData.followers%> &nbsp; <p>followers</p>
+                            </h4>
+
+
+</div>
+                                  <h4 class="userBio"><%=userData.bio%></h4>
+
+</main>
+
+
+<section>
+    <div class="extraInfo">
+        <p>This Account is Private</p>
+        <br>
+<p>Already follow <%=userData.username%> <a href="#">Log in </a>to see </p>
+<p>their photos and videos.</p>
+    </div>
+</section>
+
+<script src="/js/app.js"></script>
+   
+        
+</body>
+</html>

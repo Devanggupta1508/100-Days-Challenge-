@@ -1,0 +1,74 @@
+[
+  {
+    "username": "devang_coder",
+    "profileImg": "https://i.pravatar.cc/150?img=1",
+    "bio": "Full Stack Developer | MERN Learner 🚀",
+    "followers": 1240,
+    "following": 310,
+    "post" : 5
+  },
+
+  {
+    "username": "rahul_codes",
+    "profileImg": "https://i.pravatar.cc/150?img=2",
+    "bio": "JavaScript Enthusiast 💻",
+    "followers": 980,
+    "following": 450,
+        "post" : 5
+
+  },
+  {
+    "username": "code_with_aman",
+    "profileImg": "https://i.pravatar.cc/150?img=3",
+    "bio": "Web Developer | Node.js & Express",
+    "followers": 2100,
+    "following": 600,
+        "post" : 5
+
+  },
+  {
+    "username": "frontend_girl",
+    "profileImg": "https://i.pravatar.cc/150?img=4",
+    "bio": "Frontend Developer | React Lover ❤️",
+    "followers": 3420,
+    "following": 520,
+        "post" : 5
+
+  },
+  {
+    "username": "backend_master",
+    "profileImg": "https://i.pravatar.cc/150?img=5",
+    "bio": "Backend Engineer | APIs & Databases",
+    "followers": 2750,
+    "following": 390,
+        "post" : 5
+
+  },
+  {
+    "username": "tech_with_sonu",
+    "profileImg": "https://i.pravatar.cc/150?img=6",
+    "bio": "Tech Content Creator 🎥",
+    "followers": 5000,
+    "following": 210,
+        "post" : 5
+
+  },
+  {
+    "username": "mern_stack_dev",
+    "profileImg": "https://i.pravatar.cc/150?img=7",
+    "bio": "MERN Stack Developer 🔥",
+    "followers": 1890,
+    "following": 430,
+        "post" : 5
+
+  },
+  {
+    "username": "debug_king",
+    "profileImg": "https://i.pravatar.cc/150?img=8",
+    "bio": "I fix bugs & build apps 🛠️",
+    "followers": 1560,
+    "following": 370,
+        "post" : 5
+
+  }
+]
