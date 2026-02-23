@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+ol{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top:20px;
+    width:50%;
+    position: absolute;
+    left: 25%;
+
+}
+
+ol li {
+    font-size: 8px;
+}
+
+ol+p {
+    font-size: 10px;
+    position:relative;
+    top:50px;
+    left: 40%;
+}
