@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+<body>
+
+<form action="/login" method="post">
+
+    <label for="userFirstName">Enter Your Name</label>
+    <input id="userFirstName" type="text" 
+           placeholder="Enter Your First Name" 
+           name="userFirstName" required>
+    <br><br>
+
+    <label for="userLastName">Enter Your Last Name</label>
+    <input id="userLastName" type="text" 
+           placeholder="Enter Your Last Name" 
+           name="userLastName" required>
+    <br><br>
+
+    <label for="mobileNumber">Enter Your Mobile Number</label>
+    <input id="mobileNumber" type="tel" 
+           placeholder="Enter Your Mobile Number" 
+           name="mobileNumber" maxlength="10" required>
+    <br><br>
+
+    <label>Choose Your Gender:</label>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <input type="checkbox" id="termsCondition" 
+           name="termsCondition" required>
+    <label for="termsCondition">Terms and Conditions are accepted</label>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
