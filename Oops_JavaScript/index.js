@@ -1,4 +1,13 @@
+
+// Java Script OOps Concept 
+
+// Protype , Protype vs Normal Function , new keyword , constructor , object 
+
+
+
 // protype concept 
+
+
 
 function student(name,age,mobile) {
     this.name = name;
@@ -26,15 +35,16 @@ let studentTwo = new student("Raj",25,145457);
     this.age = age;
     this.mobile = mobile;
 
-   
-   
-   studentProto.prototype.sayHii =  function (){
+    studentProto.prototype.sayHii =  function (){
     console.log("Say Hello with Prototype"+ this.name);
+   
   }
+  
+  
 }
   
-let studentOnePro =  new studentProto("Devang",22,78787878);
-let studentTwoPro = new studentProto("Raj",25,145457);
+let studentOnePro =   new studentProto("Devang",22,78787878);
+let studentTwoPro = new  studentProto("Raj",25,145457);
 
 console.log(" sayHii function Used with Prototype",studentOnePro.sayHii===studentTwoPro.sayHii); 
 
@@ -56,3 +66,20 @@ String.prototype.toUpperCase = ()=>{
 
 
 console.log(str.toUpperCase());
+
+//class 
+
+class Person {
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    sayPerson(){
+        console.log(`${this.name}citizen of India`)};
+}
+
+let person_one = new Person("devang",22);
+let person_Two = new Person("ram",12);
+
+console.log("Class methods are automatically stored in the prototype.",person_one.sayPerson===person_Two.sayPerson);
