@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "home.html"));
 });
 
-// Form submit hone par yeh chalega (POST)
+
 app.post("/login", (req, res) => {
     console.log("Form Data:", req.body);
     res.send("Form Submitted Successfully");

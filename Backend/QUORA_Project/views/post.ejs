@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/post.css"/>
+</head>
+<body>
+    
+    <%- include("includes/header.ejs") %>
+
+
+
+
+
+
+ <div class="sideBox">
+
+    <div class="sideBoxInner">
+    <ul>
+     <button>+ Create Space</button>
+        <li>Writting</li>
+        <li>Education</li>
+         <li>Books</li>
+                  <li>Pshycology</li>
+
+         <li>Movies</li>
+         <li>Technology</li>
+    </ul>
+ 
+  <hr>
+
+  <p>About QuoraTermsPrivacyAcceptable UseAdvertiseYour
+     Ad ChoicesGrievance OfficerCareersPress Company</p>
+</div>
+
+</div>
+
+
+
+
+
+
+       <br>
+       <br>
+
+
+    <% for(let i =0;i<data.length;i++){ %>
+             <div class="userPost">
+              
+                <h4>  &nbsp; <i class="fa-regular fa-user"></i>
+ &nbsp; Author id = <%=data[i].authorId%></h4>
+
+        <img src=<%=data[i].image%> alt="userPostImg">
+                <h2 class="headertitle"><%=data[i].title%> </h2>
+
+                <h3><%=data[i].description%> </h3>
+                <h4><%=data[i].tags%></h4>
+                <h4><%=data[i].createAt %></h4>
+                               <h4>&nbsp; <i class="fa-regular fa-thumbs-up"></i> &nbsp; <%=data[i].upvotes%></h4>
+
+
+    </div>
+
+ <%}%>
+
+
+
+ <div class="sideBoxRight">
+      
+    <div class="sideBoxInnerRight">
+
+          <img src="https://i.pinimg.com/originals/2b/fc/00/2bfc004f2f1a0d6214a64175362a73c5.jpg" alt="advertisement" class="advertisement">
+          <br>
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b38169173080263.648a125a2c79a.jpg" alt="advertisement" class="advertisement">
+   </div>
+
+ </div>
+
+
+
+
+
+
+
+</body>
+</html>

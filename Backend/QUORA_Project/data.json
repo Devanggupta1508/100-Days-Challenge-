@@ -1,0 +1,90 @@
+[
+  {
+    "id": "q1",
+    "title": "What is REST API?",
+    "description": "Can someone explain REST API in simple words?",
+    "authorId": "u1",
+    "tags": ["#api", "#backend", "#web"],
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "createdAt": "2026-03-08",
+    "upvotes": 10,
+    "answers": ["a1", "a2"]
+  },
+  {
+    "id": "q2",
+    "title": "What is Node.js?",
+    "description": "Why do developers use Node.js?",
+    "authorId": "u2",
+    "tags": ["#nodejs", "#javascript"],
+    "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479",
+    "createdAt": "2026-03-07",
+    "upvotes": 5,
+    "answers": []
+  },
+  {
+    "id": "q3",
+    "title": "Difference between SQL and NoSQL?",
+    "description": "When should we use SQL and when NoSQL database?",
+    "authorId": "u3",
+    "tags": ["#database", "#sql", "#nosql"],
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    "createdAt": "2026-03-06",
+    "upvotes": 8,
+    "answers": ["a3"]
+  },
+  {
+    "id": "q4",
+    "title": "What is Express.js?",
+    "description": "How does Express.js help in backend development?",
+    "authorId": "u1",
+    "tags": ["#express", "#nodejs", "#backend"],
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+    "createdAt": "2026-03-05",
+    "upvotes": 6,
+    "answers": []
+  },
+  {
+    "id": "q5",
+    "title": "What is middleware in Express?",
+    "description": "Can someone explain middleware with example?",
+    "authorId": "u4",
+    "tags": ["#express", "#middleware"],
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "createdAt": "2026-03-04",
+    "upvotes": 4,
+    "answers": ["a4", "a5"]
+  },
+  {
+    "id": "q6",
+    "title": "What is CRUD operation?",
+    "description": "What does CRUD stand for in web development?",
+    "authorId": "u2",
+    "tags": ["#crud", "#backend"],
+    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+    "createdAt": "2026-03-03",
+    "upvotes": 7,
+    "answers": ["a6"]
+  },
+  {
+    "id": "q7",
+    "title": "What is JSON?",
+    "description": "Why is JSON commonly used in APIs?",
+    "authorId": "u5",
+    "tags": ["#json", "#api"],
+    "image": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2",
+    "createdAt": "2026-03-02",
+    "upvotes": 3,
+    "answers": []
+  },
+  {
+    "id": "q8",
+    "title": "What is the MERN stack?",
+    "description": "Can someone explain MERN stack and its components?",
+    "authorId": "u3",
+    "tags": ["#mern", "#fullstack"],
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    "createdAt": "2026-03-01",
+    "upvotes": 9,
+    "answers": ["a7"]
+  }
+]
