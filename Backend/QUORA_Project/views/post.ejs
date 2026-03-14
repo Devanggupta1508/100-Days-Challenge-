@@ -11,31 +11,11 @@
     <%- include("includes/header.ejs") %>
 
 
+<%-include("includes/rightSection.ejs")%>
 
 
+<%-include("includes/advertisement.ejs")%>
 
-
- <div class="sideBox">
-
-    <div class="sideBoxInner">
-    <ul>
-     <button>+ Create Space</button>
-        <li>Writting</li>
-        <li>Education</li>
-         <li>Books</li>
-                  <li>Pshycology</li>
-
-         <li>Movies</li>
-         <li>Technology</li>
-    </ul>
- 
-  <hr>
-
-  <p>About QuoraTermsPrivacyAcceptable UseAdvertiseYour
-     Ad ChoicesGrievance OfficerCareersPress Company</p>
-</div>
-
-</div>
 
 
 
@@ -49,34 +29,52 @@
     <% for(let i =0;i<data.length;i++){ %>
              <div class="userPost">
               
-                <h4>  &nbsp; <i class="fa-regular fa-user"></i>
- &nbsp; Author id = <%=data[i].authorId%></h4>
+                <h4 class="authorId">  &nbsp; <i class="fa-regular fa-user"></i>
+ &nbsp; Author id = <%=data[i].id%></h4>
 
         <img src=<%=data[i].image%> alt="userPostImg">
                 <h2 class="headertitle"><%=data[i].title%> </h2>
 
-                <h3><%=data[i].description%> </h3>
-                <h4><%=data[i].tags%></h4>
-                <h4><%=data[i].createAt %></h4>
-                               <h4>&nbsp; <i class="fa-regular fa-thumbs-up"></i> &nbsp; <%=data[i].upvotes%></h4>
+                <h3 class="userPostDescription"><%=data[i].description%> </h3>
+                <h4 class="hastag"><%=data[i].tags%></h4>
 
+
+                <div class="postButton">
+
+
+            <form action="/Quora/post/<%=data[i].authorId%>/like?_method=PATCH" method="post">
+
+
+                               <button type="submit"> <i class="fa-regular fa-thumbs-up"></i></button>   &nbsp;
+                                 <h4 style="display: inline;"> <%=data[i].upvotes%></h4>
+                   </form>
+                                    &nbsp; &nbsp;                                     &nbsp; &nbsp; 
+
+                               <a href="/Quora/post/<%=data[i].authorId%>/edit">
+                               <i class="fa-regular fa-pen-to-square"></i>
+</a>
+           
+
+                                    &nbsp; &nbsp; 
+                                    &nbsp; &nbsp; 
+
+ 
+
+     <form action="/Quora/<%=data[i].authorId%>/Delete?_method=DELETE" method="POST" >
+        <button type="submit">        
+                                                         <i class="fa-regular fa-trash-can"></i>
+       </button>
+
+     </form>
+
+
+     </div>
 
     </div>
 
  <%}%>
 
 
-
- <div class="sideBoxRight">
-      
-    <div class="sideBoxInnerRight">
-
-          <img src="https://i.pinimg.com/originals/2b/fc/00/2bfc004f2f1a0d6214a64175362a73c5.jpg" alt="advertisement" class="advertisement">
-          <br>
-          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b38169173080263.648a125a2c79a.jpg" alt="advertisement" class="advertisement">
-   </div>
-
- </div>
 
 
 
@@ -85,4 +83,5 @@
 
 
 </body>
+
 </html>

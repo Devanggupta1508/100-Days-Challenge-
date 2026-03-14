@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ask Question</title>
+<link rel="stylesheet" href="/newPost.css">
+</head>
+
+<body>
+ <%- include("includes/header.ejs") %>
+
+<%-include("includes/advertisement.ejs")%>
+<%-include("includes/rightSection.ejs")%>
+
+<div class="main">
+
+<div class="form-box">
+
+<h2>Ask Your Question</h2>
+
+<form action="/Quora/post/<%= post.authorId%>/newdata?_method=PATCH" method="POST">
+
+<label for="name">Your Name</label>
+<input type="text" id="name" name="name" value="<%= post.authorId %>" readonly>
+
+<label for="title">Question Title</label>
+<input type="text" id="title" name="title" value="<%= post.title  %>"required>
+
+<label for="description">Question Description</label>
+<textarea id="description" name="description"   required>   <%=post.description%></textarea>
+
+<label for="hastag">Hastag</label>
+<textarea id="hastag" name="tags"  required> <%=post.tags%></textarea>
+
+
+<label for="image">Select Your Image</label>
+<textarea id="image" name="image"  required><%=post.image%></textarea>
+
+
+<br>
+
+<button type="submit">Post Question</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -9,13 +9,32 @@ body{
 }
 
 .userPost{
-    background-color: rgb(76, 74, 74);
-    border:2px solid wheat;
+      background-color:#262626;
     margin-top: 10px;
     position: relative;
-    width: 50%;
-    height: 350px;
+    width: 52%;
+    height: 320px;
     margin-left: 400px;
+    border-radius:20px ;
+}
+
+
+.authorId{
+    position: absolute;
+    right:10px ;
+    font-size: 12px;
+    margin-bottom: 5px;
+    
+}
+
+
+.hastag{
+    position: absolute;
+    right: 0;
+     bottom: 1px;
+     margin-right: 12px;
+     font-size: 10px;
+
 }
 
 .userPost i {
@@ -24,31 +43,75 @@ body{
 
 .userPost img {
     height: 200px;
-    width: 100%;
+    width: 97%;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 
 .sideBox{
-    background-color: red;
+    
     width: 25%;
     height: 500px;
-    
+    margin-left: 15xpx;
     padding-right: 15px;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
-    margin-top:50px;
+    margin-top:100px;
     position:fixed;
+    justify-content: center;
+    align-items: center;
+
+
 
 }
 
+hr{
+    border: none;
+    border-top: 1px solid #262626;
+    width: 220px;
+    margin-left: 110px;
+}
+
+.sideBox i {
+    list-style: none;
+}
 
 .sideBoxInner{
-    background-color: yellow;
-    text-align: center;
     height:450px;
     margin: 10px;
+    
+    
 }
+
+
+  .sideBoxInner button {
+    
+    margin-left: 200px;
+    margin-top: 10px;
+    background-color: #1c1b1b;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border: none;
+  }
+
+.sideBoxInner li {
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 25px;
+    font-size: 16px;
+
+}
+
+.sideBoxInner p {
+     position: absolute;
+     left: 90px;
+     font-size: 14px;
+     margin-top: 10px;
+}
+
 
 
 .headertitle{
@@ -57,7 +120,6 @@ body{
 
 
 .sideBoxRight{
-    background-color: green;
     width: 250px;
     height: 500px;
     position: fixed;
@@ -71,7 +133,9 @@ justify-content: center;
 }
 
 .sideBoxInnerRight{
-    background-color: red;
+
+        background-color:#262626;
+
     height: 400px;
     width: 200px;
 
@@ -81,4 +145,15 @@ justify-content: center;
     width: 180px;
      height: 180px;
      margin: 10px;
+}
+
+
+.postButton{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.userPostDescription{
+    text-align: center;
 }
